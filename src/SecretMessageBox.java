@@ -2,6 +2,7 @@
 //    Level 0
 
 
+
 import javax.swing.JOptionPane;
 
 /**
@@ -14,6 +15,18 @@ import javax.swing.JOptionPane;
  */
 
 public class SecretMessageBox {
+	public static void main(String[] args) {
+		String thisIsThePassword="potato";
+		String theSecretMessage=JOptionPane.showInputDialog("What is the secret message?");
+		String guess= JOptionPane.showInputDialog("What's the password?");
+	if(thisIsThePassword.equals(guess)) {
+		JOptionPane.showMessageDialog(null,"The Secret Message is,"+ theSecretMessage);
+	}
+		else {
+			JOptionPane.showMessageDialog(null,"Intruder!!!");
+		}
+		
+	
 
 	// 0. Make a main method and put steps 1-5 inside it
 	
@@ -27,5 +40,5 @@ public class SecretMessageBox {
 	// 4. If their guess matches the password, show them the secret message
 
 	// 5. If the password does not match, pop-up "INTRUDER!!"
-
+	}
 }

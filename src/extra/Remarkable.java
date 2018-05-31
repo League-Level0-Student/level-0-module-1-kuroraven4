@@ -9,7 +9,7 @@ public class Remarkable { public static void main(String[] args) {
 		JOptionPane.showMessageDialog(null,"Heyo Potato.");
 	}
     if(question.equals("Tra")) {
-    	JOptionPane.
+    	JOptionPane.showMessageDialog(null, "");
 	}
 	
 }
