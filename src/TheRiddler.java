@@ -5,13 +5,18 @@ import javax.swing.JOptionPane;
 
 
 
-public class TheRiddler {
 
+public class TheRiddler {
+	static int score = 0;
 	public static void main(String[] args) {
-		String riddle="riverbed";
-		String guess= JOptionPane.showInputDialog("Whathas abed but never sleeps?");
-	if(guess.equals(riddle)) {
+		score = 1;
+		String riddle=" riverbed";
+		String guess= JOptionPane.showInputDialog("What has a bed but never sleeps?");
+	if(guess.equals(riddle))
+	{
 		JOptionPane.showMessageDialog(null,"Correct!");
+		score = score + 1;
+		JOptionPane.showMessageDialog(null, "Congrats! You earned"+ score + "points");
 	}
 	else {
 		JOptionPane.showMessageDialog(null, "Wrong! it's" + riddle);

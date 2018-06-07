@@ -11,8 +11,7 @@
 import org.jointheleague.graphical.robot.Robot;
 
 	
-	public class RobotInSpace implements KeyEventDispatcher {
-		
+	public class RobotInSpace implements KeyEventDispatcher { 
 	Robot rob = new Robot("mini");
 	
 	/*  
@@ -23,6 +22,8 @@ import org.jointheleague.graphical.robot.Robot;
 	 */
 
 	private void moveRobot(int keyPressed) throws InterruptedException {
+		rob.microMove(1);
+		System.out.println(keyPressed);
 	    // 2. Print out the keyPressed variable and write down the numbers for each arrow key
 
 	    // 3. If the up arrow is pressed, move the Robot up the screen.
