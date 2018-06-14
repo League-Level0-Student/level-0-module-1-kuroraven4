@@ -12,7 +12,30 @@ import javax.swing.JOptionPane;
 * your program should say "June's superpower is writing recipes".
 */
 public class XGeeks {
-public static void main(String[] args) {
+public static void main(String[] args) { 
+	String kevin = "invisible";
+	String tra = "super tall";
+	String diego = "super super super good look";
+	String daniel = "super strong";
+	String name = JOptionPane.showInputDialog("Enter a name of someone at your table.");
+if (name.equals("daniel")) {
+	JOptionPane.showMessageDialog(null,"Daniel's superpower is," + daniel);
+}
+
+if (name.equals("tra")) {
+	JOptionPane.showMessageDialog(null,"Tra's superpower is," + tra);
+	
+}
+
+if (name.equals("kevin")){
+	JOptionPane.showMessageDialog(null, "Kevin's Superpower is," + kevin);
+	
+}
+
+if (name.equals("diego")) {
+	JOptionPane.showMessageDialog(null, "Diego's super power is," + diego);
+	
+}
 
 		// 1. Save the superpower for each person in a variable.
 
